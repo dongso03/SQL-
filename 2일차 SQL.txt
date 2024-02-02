@@ -1,0 +1,25 @@
+distinct
+group by
+
+group 조건절은 뒤쪽에 having
+
+집계함수(집계값만 제대로 나오고 나머지는 올바른값은안나온다)
+count(): 행의 개수
+
+sum() 콜론의 열모두 더함
+
+avg():콜론의 열 평균 구하기
+
+min():최소값
+max():최대값
+
+sub-query
+select * from employees
+where SALARY>(select avg(salary)from employees) ;
+값의 계산을 먼저 수행할수있다.
+
+char: 고정길이
+varchar: 가변길이
+
+피케이값을 가질수있는 여러개의 컬럼이 존재하는테이블이라면 피케이값을 여러개지정할수있나?
+피케이값은 테이블당 하나? 아니다
